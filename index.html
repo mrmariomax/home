@@ -121,7 +121,7 @@
 			</div>
 		</div>
 		<div class="handles-bar">
-			<button id="playPauseBtn">▶</button>
+			<button id="playPauseBtn">&#9654;&#xFE0E;</button>
 			YT:@mrmariomax | IG:@mrmariomax | TT:@mariomax
 		</div>
 	</div>
@@ -146,10 +146,10 @@
 	playPauseBtn.addEventListener('click', () => {
 		if (music.paused) {
 			music.play();
-			playPauseBtn.textContent = '❚❚';
+			playPauseBtn.innerHTML = '&#10074;&#xFE0E;&#10074;&#xFE0E;';
 		} else {
 			music.pause();
-			playPauseBtn.textContent = '▶';
+			playPauseBtn.innerHTML = '&#9654;&#xFE0E;';
 		}
 	});
 	</script>
