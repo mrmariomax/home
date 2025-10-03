@@ -4,7 +4,6 @@
 <head>
     <title>mariomax.net</title>
     <link rel="icon" href="acchi.gif">
-<!-- [✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦] -->
 
 
 
@@ -89,8 +88,47 @@
 		cursor: pointer;
 		margin-right: 15px;
 	}
+
+
+
+	.posts-container {
+		width: 45%;
+		margin: 40px;
+	}
+	.post-wrapper {
+		margin-bottom: 25px; /* Space between each post */
+	}
+	.post-date {
+		margin-bottom: 5px;
+		font-size: 1em;
+	}
+	.post {
+		background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+		padding: 15px;
+		display: flex;
+		gap: 15px;
+		align-items: flex-start; /* Aligns items to the top */
+	}
+	.post-image {
+		flex-basis: 100px; /* Sets a fixed width for the image container */
+		flex-shrink: 0; /* Prevents the image from shrinking */
+	}
+	.post-text {
+		flex: 1; /* Makes the text take up the remaining space */
+	}
+	.post-image img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.post-text {
+		color: black; /* Making text inside post black for readability */
+	}
 	</style>
 </head>
+
+
+
 <!-- [✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦] -->
 
 
@@ -126,7 +164,7 @@
 		</div>
 	</div>
 	
-<!-- [✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦] -->
+
 
 <!-- [revolving welcome spamton] -->
 <div class="container">
@@ -137,6 +175,28 @@
         <img src="spamdance.gif" alt="spamton dance gif" style="margin-left: 20px;">
         </marquee>
     </div>
+</div>
+
+
+
+<!-- [posts] -->
+<div class="posts-container">
+
+	<div class="post-wrapper">
+		<p class="post-date">2025-08-03 @ 17:27:01</p>
+		<div class="post">
+			<div class="post-image">
+				<img src="acchi.gif" alt="Post image">
+			</div>
+			<div class="post-text">
+				<p>hellohello</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
 </div>
 
 <script>
