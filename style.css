@@ -1,0 +1,46 @@
+/* General body style for that classic gray background */
+body {
+    background-color: #C0C0C0; /* Classic Windows gray */
+    font-family: "Times New Roman", serif;
+    display: flex; /* This helps place the nav and main content side-by-side */
+    margin: 0;
+}
+
+/* The navigation menu container */
+.side-menu {
+    width: 200px; /* Fixed width for the sidebar */
+    padding: 15px;
+}
+
+/* Removing default bullet points and padding from the list */
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* This is where we style the links to look like buttons! */
+.side-menu a {
+    display: block; /* Makes the whole area clickable */
+    padding: 12px;
+    margin-bottom: 10px; /* Space between buttons */
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: #C0C0C0;
+
+    /* The KEY to the 90s button look */
+    border: 3px solid #C0C0C0;
+    border-style: outset; /* This makes it look "raised" */
+}
+
+/* Style for when the button is being clicked */
+.side-menu a:active {
+    border-style: inset; /* This makes it look "pressed in" */
+}
+
+/* The main content area */
+.main-content {
+    flex-grow: 1; /* This makes it take up the rest of the page width */
+    padding: 20px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<!-- [MENU BAR] -->
+<head>
+    <title>mariomax.net</title>
+    <link rel="icon" href="acchi.gif">
+<!-- [✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦] -->
+
+
+
+<!-- [FONT/COLOR/ETC] -->
+    <style>
+    body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: white;
+		background-image: url('bg.gif');
+		background-size: 160px;
+        margin: 0;
+    }
+	
+	.header-container {
+		width: 80%;
+		margin: 20px auto;
+	}
+	
+	.top-bar {
+		background-color: rgba(55, 55, 255, 0.7);
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 2px outset blue;
+	}
+	h1 {
+		margin: 0;
+		font-size: 1.5em;
+	}
+	a {
+		color: white;
+	}
+	.container {
+		padding: 0 20px;
+	}
+	.gif-header {
+		margin-top: 20px;
+		margin-bottom: 0;
+		font-size: 1.1em; /* Makes the header text smaller */
+	}
+	.marquee-bar {
+		margin-top: 5px; /* Keeps space below the top bar */
+		background-color: rgba(55, 55, 255, 0.7); /* White with 50% transparency */
+		padding: 10px 20px;
+		display: flex;
+		align-items: center;
+		border: 2px outset blue;
+	}
+	.socials-section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	.social-item {
+		display: flex;
+		align-items: center;
+		border: 1px solid black;
+		background-color: rgba(131, 131, 131, 0.7);
+		padding: 5px;
+		gap: 8px;
+	}
+	.handles-bar {
+		text-align: right;
+		padding: 5px;
+		font-size: 1em;
+		margin-top: 5px;
+	}
+	#playPauseBtn {
+		background-color: #c0c0c0;
+		border: 2px outset #fff;
+		padding: 5px 10px;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		cursor: pointer;
+		margin-right: 15px;
+	}
+	</style>
+</head>
+<!-- [✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦] -->
+
+
+
+<!-- [NAV] -->
+<body>
+	<audio id="backgroundMusic" src="berdly.mp3" loop></audio>
+	<div class="header-container">
+		<div class="top-bar">
+			<div style="display: flex; align-items: center;">
+				<h1>max's landing page</h1>
+				<img src="acchi.gif" alt="acchi gif" style="width: 40px; margin-left: 15px;">
+			</div>
+			<div class="socials-section">
+				<span style="font-weight: bold; font-size: 1.2em;">socials:</span>
+				<a href="https://www.youtube.com/mariomax" class="social-item">
+					<img src="youtube.png" alt="YouTube" style="width: 30px;">
+					<span>youtube</span>
+				</a>
+				<a href="https://www.instagram.com/mrmariomax" class="social-item">
+					<img src="instagram.png" alt="Instagram" style="width: 30px;">
+					<span>instagram</span>
+				</a>
+				<a href="https://www.tiktok.com/@mariomax" class="social-item">
+					<img src="tiktok.png" alt="TikTok" style="width: 30px;">
+					<span>tiktok</span>
+				</a>
+			</div>
+		</div>
+		<div class="handles-bar">
+			<button id="playPauseBtn">▶</button>
+			YT:@mrmariomax | IG:@mrmariomax | TT:@mariomax
+		</div>
+	</div>
+	
+<!-- [✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦] -->
+
+<!-- [revolving welcome spamton] -->
+<div class="container">
+	<h2 class="gif-header">cool gifs:</h2>
+	<div class="marquee-bar">
+        <marquee>
+        welcome
+        <img src="spamdance.gif" alt="spamton dance gif" style="margin-left: 20px;">
+        </marquee>
+    </div>
+</div>
+
+<script>
+	const music = document.getElementById('backgroundMusic');
+	const playPauseBtn = document.getElementById('playPauseBtn');
+
+	playPauseBtn.addEventListener('click', () => {
+		if (music.paused) {
+			music.play();
+			playPauseBtn.textContent = '❚❚';
+		} else {
+			music.pause();
+			playPauseBtn.textContent = '▶';
+		}
+	});
+	</script>
+
+<!-- [✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦] -->
+</body>
+</html>
